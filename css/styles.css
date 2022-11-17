@@ -4,70 +4,99 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    background-color: rgb(128, 108, 84);
     overflow: hidden;
 }
 
-header {
-    height: 8vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 #start-btn {
+    font-size: 16pt;
+    color: #FF0DEF;
     width: 100px;
     height: 5vh;
     margin-bottom: 1em;;
+    border-radius: 5px;
+    background-color: #121AB3;
+    -webkit-box-shadow: 0px 0px 15px 7px #000000; 
+    box-shadow: 0px 0px 15px 7px #000000;
 }
 
 main {
     
-    height: 92vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background-color: #0D1AFF;
+
 }
 
-#playground {
-    border: solid 5px black;
-    width: 80vw;
-    height: 80vh;
-}
-
-#snake {
-    position: relative;
-    /* top: 0px;
-    left: 0px; */
-
-    /* background-color: greenyellow; */
-    width: 20px;
-    height: 20px;
-    /* border-radius: 3px; */
-}
-
-#snake img {
-    width: 20px;
-    height: 20px;
+#score {
+    font-size: 20pt;
+    color: #FF0DEF;
+    margin: 20px;
 }
 
 
+#canvas {
+    border:  solid;
+    background-color: #B312A8;
+    -webkit-box-shadow: 0px 0px 15px 7px #000000; 
+    box-shadow: 0px 0px 15px 7px #000000;
+}
 
-#target {
+#retry-box {
+    position: absolute;
+    
+    width: 50vw;
+    height: 50vh;
+    background-color: #0D1AFF ;
+    border: solid;
+    border-radius: 5px;
+    font-size: 30pt;
+    font-weight: 800;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: none;
-    position: relative;
-    /* top: -10px;
-    left: 0px; */
+}
 
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
+#retry-btn {
+    margin-top: 50px;
+    font-size: 16pt;
+    color: #FF0DEF;
+    width: 100px;
+    height: 5vh;
+    margin-bottom: 1em;;
+    border-radius: 5px;
+    background-color: #121AB3;
+    -webkit-box-shadow: 0px 0px 15px 7px #000000; 
+    box-shadow: 0px 0px 15px 7px #000000;
+}
 
-
-
-
+.countdown {
+    font-size: 40em;
+    position: absolute;
 
 }
+
+#id-3{
+    display: none;
+}
+
+#id-2{
+    display: none;
+}
+
+#id-1{
+    display: none;
+}
+
+
+
+
+
 
